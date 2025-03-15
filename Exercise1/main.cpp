@@ -4,6 +4,11 @@
 #include <string>
 using namespace std;
 
+int f(int N){
+	N = N*(N+1)*(2*N+1)/6;
+	return N;
+}
+
 int main()
 {
 	int num;
@@ -28,6 +33,6 @@ int main()
 		i++;
 	}
 	cout << "Sum of the first " << num << " numbers squared: " << sum_of_squares << endl;
-	
+	cout << "Results of f(" << num << "): " << f(num) << endl;
     return 0;
 }
